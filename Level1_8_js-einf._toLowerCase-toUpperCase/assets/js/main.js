@@ -3,6 +3,10 @@ const text = `Sam is going to codingschool`;
 const text2 = text.replace("codingschool", "school");
 
 const first = text2.toUpperCase();
+// Alternative ohne neue text Variable:
+const first2 = text.slice(0, -12).concat(text.slice(-6)).toUpperCase();
+
+
 const second = text2.toLowerCase();
 
 const school = text2.slice(16);
@@ -17,3 +21,4 @@ document.write(second + "<br />");
 document.write(third + "<br />");
 document.write(fourth + "<br />");
 document.write(fifth + "<br />");
+document.write(first2 + "<br />");
